@@ -4,4 +4,5 @@ export default [
   index('routes/dashboard.jsx'),
   route('my-budget', 'routes/mybudget.jsx'),
   route('analytics', 'routes/analytics.jsx'),
+  route('auth', 'routes/auth.jsx'),
 ] satisfies RouteConfig;

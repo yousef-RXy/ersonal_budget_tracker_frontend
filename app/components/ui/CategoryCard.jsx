@@ -9,11 +9,15 @@ const CategoryCard = ({
   totalAmount,
   color = 'white',
   titleColor = 'white',
+  minWidth = '464px',
 }) => {
   const sections = [{ color, percent: 100 }];
 
   return (
-    <div className="flex items-center justify-between w-full bg-transparent px-2 py-1 rounded-lg">
+    <div
+      className="flex items-center justify-between w-full bg-transparent px-2 py-1 rounded-lg"
+      style={{ minWidth }}
+    >
       <div className="flex items-center gap-4">
         <MultiColorCircle
           sections={sections}
